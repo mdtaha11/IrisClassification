@@ -34,8 +34,6 @@ y_pred=classifier.predict(X_test)
 from sklearn.metrics import confusion_matrix
 cm=confusion_matrix(y_pred,Y_test)
 
+accuracy=np.trace(cm)/np.sum(cm)
 
-
-
-
-
+ 
